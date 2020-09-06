@@ -1,1 +1,4 @@
-.avi
+compressed_converted_test.avi compressed_test.avi converted_test.avi test.avi
+*.avi
+*.mp4
+
