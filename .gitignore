@@ -1,4 +1,7 @@
 compressed_converted_test.avi compressed_test.avi converted_test.avi test.avi
+<<<<<<< HEAD
 *.avi
 *.mp4
-
+__pycache__
+=======
+>>>>>>> 43d7db287d121c07e1a271e1ef6b6f5da247aa9c

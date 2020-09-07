@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<title> UCS538-A3q1 </title>
+	<h2> Select a video to convert </h2>
+	<p>
+		{% with messages = get_flashed_messages() %}
+		  {% if messages %}
+			<ul class=flashes>
+			{% for message in messages %}
+			  <li>{{ message }}</li>
+			{% endfor %}
+			</ul>
+		  {% endif %}
+		{% endwith %}
+	</p>
+	<form method="post" action="/ucs538-assignment3-q1" enctype="multipart/form-data">
+	    <dl>
+			<p>
+				<input type="file" name="file" autocomplete="off" required>
+			</p>
+	    </dl>
+	    <p>
+			<input type="submit" value="Submit">
+			</p>
+			<p>
+				Please wait after clicking submit, file will begin downloading automatically after conversion
+			</p>
+	</form>
+	<p>
+</html>
