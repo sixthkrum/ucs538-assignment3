@@ -1,5 +1,5 @@
 import os
-from appConverter import app
+from appCompressor import app
 from flask import Flask, flash, request, redirect, render_template, url_for, send_file
 from werkzeug.utils import secure_filename
 import filetype
