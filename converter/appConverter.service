@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to serve ucs538-assignment3-q1
+After=network.target
+
+[Service]
+User=user
+Group=www-data
+WorkingDirectory=/home/user/apps/ucs538-assignment3/converter
+Environment="PATH=/home/user/apps/ucs538-assignment3/assvenv/bin"
+ExecStart=/home/user/apps/ucs538-assignment3/assvenv/bin/uwsgi --ini converter.ini
+
+[Install]
+WantedBy=multi-user.target
